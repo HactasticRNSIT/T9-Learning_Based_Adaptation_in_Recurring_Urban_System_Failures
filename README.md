@@ -135,10 +135,10 @@ npm start
 
 ## Team Members
 
-- Member 1
-- Member 2
-- Member 3
-- Member 4
+- Member Sparsh Jaiswal
+- Member Srajan Porwal
+- Member Sujal Parmar
+- Member Shreya Kumari
 
 ---
 
