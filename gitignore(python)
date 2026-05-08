@@ -1,0 +1,204 @@
+export default function UrbanMindAI() {
+  const features = [
+    "AI-based congestion prediction",
+    "Recurring failure pattern detection",
+    "Traffic risk heatmaps",
+    "Adaptation gap analysis",
+    "Smart traffic recommendations",
+    "Interactive analytics dashboard",
+  ];
+
+  const stats = [
+    { title: "Recurring Zones", value: "24" },
+    { title: "Prediction Accuracy", value: "92%" },
+    { title: "Risk Alerts", value: "18" },
+    { title: "Traffic Reduction", value: "31%" },
+  ];
+
+  return (
+    <div className="min-h-screen bg-gray-100 text-gray-900">
+      {/* Navbar */}
+      <nav className="flex items-center justify-between px-8 py-5 bg-white shadow-md sticky top-0 z-50">
+        <h1 className="text-2xl font-bold text-blue-700">UrbanMind AI</h1>
+
+        <div className="hidden md:flex gap-6 text-sm font-medium">
+          <a href="#problem" className="hover:text-blue-600">
+            Problem
+          </a>
+          <a href="#features" className="hover:text-blue-600">
+            Features
+          </a>
+          <a href="#dashboard" className="hover:text-blue-600">
+            Dashboard
+          </a>
+          <a href="#contact" className="hover:text-blue-600">
+            Contact
+          </a>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="px-8 py-20 bg-gradient-to-r from-blue-700 to-indigo-800 text-white">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-5xl font-extrabold leading-tight mb-6">
+              AI-Powered Urban Traffic Intelligence
+            </h2>
+
+            <p className="text-lg text-gray-200 mb-8 leading-relaxed">
+              UrbanMind AI helps cities predict recurring traffic congestion,
+              identify hidden disruption patterns, and generate proactive
+              adaptation strategies for smarter urban resilience.
+            </p>
+
+            <div className="flex gap-4">
+              <button className="bg-white text-blue-700 px-6 py-3 rounded-2xl font-semibold shadow-lg hover:scale-105 transition">
+                Explore Dashboard
+              </button>
+
+              <button className="border border-white px-6 py-3 rounded-2xl font-semibold hover:bg-white hover:text-blue-700 transition">
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 shadow-2xl border border-white/20">
+            <div className="grid grid-cols-2 gap-6">
+              {stats.map((stat, index) => (
+                <div
+                  key={index}
+                  className="bg-white/10 rounded-2xl p-6 text-center"
+                >
+                  <h3 className="text-4xl font-bold mb-2">{stat.value}</h3>
+                  <p className="text-gray-200">{stat.title}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Problem Statement */}
+      <section id="problem" className="py-20 px-8 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-10">
+            Problem Statement
+          </h2>
+
+          <div className="bg-gray-50 p-10 rounded-3xl shadow-md leading-relaxed text-lg text-gray-700">
+            <p className="mb-6">
+              Urban traffic congestion is one of the most recurring and
+              disruptive failures in modern cities. Despite years of traffic
+              monitoring and infrastructure improvements, congestion repeatedly
+              occurs in the same areas under similar environmental and
+              operational conditions.
+            </p>
+
+            <p className="mb-6">
+              Cities generate large amounts of traffic-related data such as
+              vehicle density, weather conditions, road incidents, public
+              transport activity, and traffic signal behavior. However, these
+              datasets are often analyzed independently, resulting in reactive
+              responses instead of adaptive learning.
+            </p>
+
+            <p>
+              UrbanMind AI develops an AI-powered system capable of learning
+              from recurring traffic disruptions, predicting future congestion
+              risks, identifying hidden dependency patterns, and generating
+              proactive adaptation recommendations for smarter urban traffic
+              management.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Features */}
+      <section id="features" className="py-20 px-8 bg-gray-100">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-14">
+            Key Features
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition hover:-translate-y-2"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-blue-100 flex items-center justify-center mb-6 text-2xl">
+                  🚦
+                </div>
+
+                <h3 className="text-xl font-semibold mb-4">{feature}</h3>
+
+                <p className="text-gray-600 leading-relaxed">
+                  Intelligent AI-driven analysis and prediction system for
+                  adaptive urban traffic resilience.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Dashboard Preview */}
+      <section id="dashboard" className="py-20 px-8 bg-white">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-4xl font-bold mb-6">Smart Traffic Dashboard</h2>
+
+          <p className="text-gray-600 text-lg mb-12 max-w-3xl mx-auto">
+            Monitor congestion zones, analyze recurring disruption patterns,
+            and visualize AI-generated adaptation insights in real time.
+          </p>
+
+          <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-3xl p-10 shadow-2xl text-white">
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-lg">
+                <h3 className="text-2xl font-bold mb-2">High Risk Zones</h3>
+                <p className="text-5xl font-extrabold">12</p>
+              </div>
+
+              <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-lg">
+                <h3 className="text-2xl font-bold mb-2">Traffic Alerts</h3>
+                <p className="text-5xl font-extrabold">34</p>
+              </div>
+
+              <div className="bg-white/10 rounded-2xl p-6 backdrop-blur-lg">
+                <h3 className="text-2xl font-bold mb-2">AI Suggestions</h3>
+                <p className="text-5xl font-extrabold">19</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer
+        id="contact"
+        className="bg-gray-900 text-white py-10 px-8 mt-10"
+      >
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+          <div>
+            <h2 className="text-2xl font-bold mb-2">UrbanMind AI</h2>
+            <p className="text-gray-400">
+              Adaptive traffic intelligence for smarter cities.
+            </p>
+          </div>
+
+          <div className="flex gap-6 text-gray-300">
+            <a href="#" className="hover:text-white">
+              GitHub
+            </a>
+            <a href="#" className="hover:text-white">
+              Documentation
+            </a>
+            <a href="#" className="hover:text-white">
+              Contact
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
